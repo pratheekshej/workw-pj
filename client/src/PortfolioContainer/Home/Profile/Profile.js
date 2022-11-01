@@ -4,7 +4,7 @@ import "./Profile.scss";
 import Typical from 'react-typical';
 import ScrollService from "../../../core/services/scroll-service";
 
-const Profile = () => {
+const Profile = ({ renderTypical }) => {
     return (
         <div className="profile-container">
             <div className="profile-parent">
@@ -39,19 +39,22 @@ const Profile = () => {
                     <div className="profile-details-role">
                         <span className="primary-text">
                             <h1>
-                                <Typical
-                                    loop={Infinity}
-                                    steps={[
-                                        "a React/Angular Dev", 1000,
-                                        "Enthusiastic", 1000,
-                                        "Detail Oriented", 1000,
-                                        "Collaborative", 1000,
-                                        "Focused", 1000
-                                    ]}
-                                />
+                                {
+                                    (renderTypical) ?
+                                        <Typical
+                                            loop={Infinity}
+                                            steps={[
+                                                "a React/Angular Dev", 1000,
+                                                "Enthusiastic", 1000,
+                                                "Detail Oriented", 1000,
+                                                "Collaborative", 1000,
+                                                "Focused", 1000
+                                            ]}
+                                        /> : null
+                                }
                             </h1>
                             <span className="profile-role-tagline">
-                                I can get things visually sound and terrific for you.
+                                I can give life to your ideas with crisp clarity and authenticity.
                             </span>
                         </span>
                     </div>
@@ -62,7 +65,7 @@ const Profile = () => {
                         >
                             Hire Me
                         </button>
-                        <a href="Pratheeksh Joseph - CV.pdf" download={'Pratheeksh Joseph - CV.pdf'}>
+                        <a href="Pratheeksh Joseph - Lead Frontend SE.pdf" download={'Pratheeksh Joseph - CV.pdf'}>
                             <button className="btn highlighted-btn">Get Resume</button>
                         </a>
                     </div>
@@ -75,4 +78,4 @@ const Profile = () => {
     );
 };
 
-export default Profile;
+export default React.memo(Profile);

@@ -12,21 +12,25 @@ const App = () => {
 
   const [screenName, setScreenName] = useState('Home');
 
-  let screenBroadcastHandler = useCallback((screen) => {
-    setScreenName(screen.screenInView);
-  }, []);
-
-  const fadeInSubsription = ScrollService.currentScreenBroadCaster.subscribe(screenBroadcastHandler);
-
-  useEffect(() => {
-    gotoHomeSection();
-  }, []);
+  let screenHandler = useCallback((screen) => {
+    if (screen.screenInView) {
+      setScreenName(screen.screenInView);
+    } else if (screen.fadeInScreen) {
+      setScreenName(screen.fadeInScreen);
+    }
+  }, [screenName]);
 
   const gotoHomeSection = () => {
     let screenComponent = document.getElementById('Home');
     if (!screenComponent) { return; }
     screenComponent.scrollIntoView({ behavior: 'smooth' });
   }
+
+  useEffect(() => {
+    gotoHomeSection();
+    ScrollService.currentScreenBroadCaster.subscribe(screenHandler);
+    ScrollService.currentScreenFadeIn.subscribe(screenHandler);
+  }, []);
 
   const upArrowToHome = () => {
     return (
@@ -41,7 +45,7 @@ const App = () => {
       <ToastContainer />
       <PortfolioContainer />
       {
-        screenName !== 'Home' ?
+        (screenName !== 'Home') ?
           upArrowToHome() :
           null
       }

@@ -7,18 +7,32 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Header.scss';
 
-const Header = (props) => {
+const Header = ({ screen }) => {
     const [selectedScreen, setSelectedScreen] = useState(0);
     const [showHeaderOptions, setShowHeaderOptions] = useState(false);
 
     const updateCurrentScreen = (currentScreen) => {
         if (!currentScreen || !currentScreen.screenInView) { return; }
-        let screenIndex = GET_SCREEN_INDEX(currentScreen.screenInView)
+        let screenIndex = GET_SCREEN_INDEX(currentScreen.screenInView);
         setSelectedScreen(screenIndex);
         if (screenIndex < 0) { return; }
     }
 
-    let currentScreenSubscription = ScrollService.currentScreenBroadCaster.subscribe(updateCurrentScreen);
+    useEffect(() => {
+        ScrollService.currentScreenBroadCaster.subscribe(updateCurrentScreen);
+        if (screen) { updateCurrentScreen({ screenInView: screen }); }
+    }, [screen]);
+
+    const getHeaderOptionClass = (screenIndex) => {
+        let classes = "header-option";
+        if (screenIndex < TOTAL_SCREENS.length - 1) {
+            classes += " header-option-seperator";
+        }
+        if (selectedScreen === screenIndex) {
+            classes += " selected-header-option";
+        }
+        return classes;
+    }
 
     const getHeaderOptions = () => {
         return (
@@ -31,17 +45,6 @@ const Header = (props) => {
                 </div>
             ))
         );
-    }
-
-    const getHeaderOptionClass = (screenIndex) => {
-        let classes = "header-option";
-        if (screenIndex < TOTAL_SCREENS.length - 1) {
-            classes += " header-option-seperator";
-        }
-        if (selectedScreen === screenIndex) {
-            classes += " selected-header-option";
-        }
-        return classes;
     }
 
     const switchScreen = (index, screen) => {
@@ -69,4 +72,4 @@ const Header = (props) => {
     )
 };
 
-export default Header;
+export default React.memo(Header);

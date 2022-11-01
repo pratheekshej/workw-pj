@@ -12,9 +12,9 @@ const AboutMe = (props) => {
     };
     const fadeInSubsription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
     const SCREEN_CONSTANTS = {
-        description: `Diligent frontend software engineer with 6 years of
+        description: `Diligent frontend software engineer with 7 years of
                     experience in JavaScript programming and front-end engineering.
-                    Self-directed with expertise in React and Angular. Talented at
+                    Self-directed with expertise in ReactJS and Angular. Talented at
                     cultivating collaborative and supportive team environment.
                     I'm looking forward to working with challenging environment with
                     cutting edge technologies in application development
@@ -26,13 +26,19 @@ const AboutMe = (props) => {
             bullets: [
                 "Web development and front-end coding",
                 "Interactive front-end as per the design",
-                "React and Angular 5+",
-                "React Hooks",
-                "React Redux state management",
-                "REST APIs",
+                "ReactJS and Angular 5+",
+                "RxJS",
+                "Web Components",
+                "Best programming techniques involving React Hooks",
+                "React Redux for state management",
+                "Handling REST APIs",
+                "JEST framework",
                 "HTML5/CSS",
                 "SASS/SCSS",
-                "D3 JS Customization"
+                "D3 JS Customization",
+                "Agile Programming",
+                "Git/Bitbucket",
+                "JIRA"
             ]
         }
     };
@@ -58,7 +64,9 @@ const AboutMe = (props) => {
                             <div className='highlight-heading'>
                                 <span>{SCREEN_CONSTANTS.highlights.heading}</span>
                             </div>
-                            {renderHighlight()}
+                            <div className='highlight-content'>
+                                {renderHighlight()}
+                            </div>
                         </div>
                         <div className='about-me-options'>
                             <button
@@ -66,7 +74,7 @@ const AboutMe = (props) => {
                                 onClick={() => ScrollService.scrollHandler.scrollToHireMe()}>
                                 Hire Me
                             </button>
-                            <a href="Pratheeksh Joseph - CV.pdf" download={'Pratheeksh Joseph - CV.pdf'}>
+                            <a href="Pratheeksh Joseph - Lead Frontend SE.pdf" download={'Pratheeksh Joseph - CV.pdf'}>
                                 <button className="btn highlighted-btn">Get Resume</button>
                             </a>
                         </div>

@@ -45,8 +45,12 @@ export default class ScrollService {
             let fullyVisible = this.isElementInView(screenFromDOM, "complete");
             let partiallyVisible = this.isElementInView(screenFromDOM, "partial");
             if (fullyVisible || partiallyVisible) {
-                if (partiallyVisible && !screen['alreadyRendered']) {
-                    screen['alreadyRendered'] = true;
+                if (partiallyVisible) {
+                    if (!screen['alreadyRendered']) {
+                        screen['alreadyRendered'] = true;
+                    } else if (screen['alreadyRendered']) {
+                        screen['alreadyRendered'] = false;
+                    }
                     ScrollService.currentScreenFadeIn.next({
                         fadeInScreen: screen.screen_name
                     });
