@@ -65,7 +65,7 @@ const Profile = ({ renderTypical }) => {
                         >
                             Hire Me
                         </button>
-                        <a href="Pratheeksh Joseph - Lead Frontend SE.pdf" download={'Pratheeksh Joseph - CV.pdf'}>
+                        <a href="Pratheeksh Joseph - Resume 2023.pdf" download={'Pratheeksh Joseph - CV.pdf'}>
                             <button className="btn highlighted-btn">Get Resume</button>
                         </a>
                     </div>
