@@ -7,13 +7,18 @@ export const workExperience = [
             toDate: 'Present'
         },
         singleDescText: `
-            Currently working as a Lead Frontend Engineer for a datascience project called OMICON.
-            OMICON is a portal for the collaborative study of biological systems using omics data.
-            It was created by The Oldham Lab, which is part of the Department of Neurological Surgery at UCSF.
+            In my latest project, I worked as Lead Frontend Engineer for a product called MessageBox (https://getmymessage.co).
+            MessageBox is a web application running across multiple domains which helps users to manage large
+            hotels. The app allows hotels to manage all Guest Requests and Hotel Internal Tasks to ensure the highest level of Guest
+            Satisfaction. Everything in MessageBox is chat based. In addition to normal communication, every request or job is in
+            form of an easy to understand chat message. A Supervisor or a Runner can manage all the jobs with simple dashboards
+            which provides complete status of every job. A variety of reports based on all types of guest requests are readily
+            available for download. Conduct analysis of efficiency with ease with our Productivity reports.
         `,
         multiDescTexts: [{
-            descText: `* Developed new module for a running IOT project with Dashboard feature to manage events,
-            and analyse the time and record of an intrusion in road construction lane.`,
+            descText: `* Created a datascience project called OMICON. OMICON is a portal for the collaborative study of biological systems using omics data. It was created by The Oldham Lab, which is part of the Department of Neurological Surgery at UCSF.`,
+        }, {
+            descText: `* Developed new module for a running IOT project with Dashboard feature to manage events, and analyse the time and record of an intrusion in road construction lane.`,
         }, {
             descText: `* Integrated the web app with backend services to view the updates on the frontend layer on the dashboard screen.`,
         }, {
