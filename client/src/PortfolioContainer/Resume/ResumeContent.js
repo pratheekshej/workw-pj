@@ -87,6 +87,18 @@ export const workExperience = [
 
 export const projectDetails = [
     {
+        title: "MessageBox",
+        duration: null,
+        description: `MessageBox is a web application running across multiple domains which helps users to manage large
+        hotels. The app allows hotels to manage all Guest Requests and Hotel Internal Tasks to ensure the highest level of Guest
+        Satisfaction. Everything in MessageBox is chat based. In addition to normal communication, every request or job is in
+        form of an easy to understand chat message. A Supervisor or a Runner can manage all the jobs with simple dashboards
+        which provides complete status of every job. A variety of reports based on all types of guest requests are readily
+        available for download. Conduct analysis of efficiency with ease with our Productivity reports.`,
+        feSubHeading: "Frontend : ReactJS, React Hooks, React Redux, Redux Rematch, HTML5/SCSS",
+        beSubHeading: "Backend : PHP-Laravel, PostgreSQL, Lambda, AWS-EC2, Jenkins"
+    },
+    {
         title: "OMICON",
         duration: null,
         description: `OMICON is a portal for the collaborative study of biological systems using omics data. It

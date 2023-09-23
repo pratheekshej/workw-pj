@@ -55,7 +55,7 @@ const Resume = (props) => {
         { label: 'Interests', logoSrc: "interests.svg" }
     ];
     const programmingSkillDetails = [
-        { skill: "ReactJS/React Redux", ratingPercentage: 85 },
+        { skill: "ReactJS/React Redux", ratingPercentage: 90 },
         { skill: "Angular", ratingPercentage: 80 },
         { skill: "JavaScript", ratingPercentage: 80 },
         { skill: "HTML", ratingPercentage: 85 },
