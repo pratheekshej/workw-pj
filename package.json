@@ -13,16 +13,16 @@
     "server": "nodemon server.js",
     "client": "cd client && yarn start",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd client && yarn && yarn build"
+    "heroku-postbuild": "cd client && yarn && yarn build"
   },
   "author": "Pratheeksh E Joseph",
   "license": "MIT",
   "dependencies": {
-    "concurrently": "^7.0.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.0",
-    "express": "^4.17.2",
-    "nodemailer": "^6.7.2",
-    "nodemon": "^2.0.15"
+    "concurrently": "7.0.0",
+    "cors": "2.8.5",
+    "dotenv": "16.0.0",
+    "express": "4.17.2",
+    "nodemailer": "6.7.2",
+    "nodemon": "2.0.15"
   }
 }
