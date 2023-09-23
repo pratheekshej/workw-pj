@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "engines": {
     "node": "18.18.0",
-    "npm": "8.3.0",
+    "npm": "9.8.1",
     "yarn": "1.22.19"
   },
   "description": "Node JS code structure for mailing.",
@@ -13,7 +13,7 @@
     "server": "nodemon server.js",
     "client": "cd client && yarn --ignore-engines start",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "cd client && yarn build"
+    "heroku-postbuild": "cd client && yarn --ignore-engines && yarn build"
   },
   "author": "Pratheeksh E Joseph",
   "license": "MIT",
