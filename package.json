@@ -13,7 +13,7 @@
     "server": "nodemon server.js",
     "client": "cd client && yarn --ignore-engines start",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "cd client && yarn && yarn --ignore-engines build"
+    "heroku-postbuild": "cd client && yarn --ignore-engines build"
   },
   "author": "Pratheeksh E Joseph",
   "license": "MIT",
