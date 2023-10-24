@@ -4,7 +4,7 @@ export const workExperience = [
             heading: 'QBurst',
             subHeading: 'Lead Frontend Engineer',
             fromDate: '2020',
-            toDate: 'Present'
+            toDate: '2023'
         },
         singleDescText: `
             In my latest project, I worked as Lead Frontend Engineer for a product called MessageBox (https://getmymessage.co).
@@ -33,11 +33,11 @@ export const workExperience = [
             toDate: '2020'
         },
         singleDescText: `
-            As Angular developer, I worked with Java Engineers, Project lead and DB analyst to formulate design structure
+            As a React and Angular developer, I worked with Java Engineers, Project lead and DB analyst to formulate design structure
             and implemented a well-organized structural code pattern to perform operations at the client-side.
             Performed unit tests and worked with QA team for bug fixes.
             Partook in deploying the app in production environment in Windows server on NGINX version 1.15.8.
-            Client-side computation and frameworks were handled with Angular version 5.2.
+            Client-side computation and frameworks were handled with ReactJS version 16.7.0 and Angular version 5.2.
         `,
         multiDescTexts: [{
             descText: `* Developed a CCTV module with latest updates for ship and shore which runs on an IIOT platform

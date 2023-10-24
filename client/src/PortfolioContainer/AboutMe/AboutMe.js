@@ -12,7 +12,7 @@ const AboutMe = (props) => {
     };
     const fadeInSubsription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
     const SCREEN_CONSTANTS = {
-        description: `Diligent frontend software engineer with 7 years of
+        description: `Diligent frontend software engineer with over 7 years of
                     experience in JavaScript programming and front-end engineering.
                     Self-directed with expertise in ReactJS and Angular. Talented at
                     cultivating collaborative and supportive team environment.
@@ -25,7 +25,7 @@ const AboutMe = (props) => {
             heading: "Here are a few highlights",
             bullets: [
                 "Web development and front-end coding",
-                "Interactive front-end as per the design",
+                "Interactive front-end as per the UI/UX design",
                 "ReactJS and Angular 5+",
                 "RxJS",
                 "Web Components",
@@ -74,7 +74,7 @@ const AboutMe = (props) => {
                                 onClick={() => ScrollService.scrollHandler.scrollToHireMe()}>
                                 Hire Me
                             </button>
-                            <a href="Pratheeksh Joseph - Resume 2023.pdf" download={'Pratheeksh Joseph - CV.pdf'}>
+                            <a href="Pratheeksh - Senior Engineer.pdf" download={'Pratheeksh Joseph - CV.pdf'}>
                                 <button className="btn highlighted-btn">Get Resume</button>
                             </a>
                         </div>
