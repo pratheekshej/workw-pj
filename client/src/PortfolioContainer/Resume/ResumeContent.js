@@ -112,6 +112,16 @@ export const projectDetails = [
         beSubHeading: "Backend : Python, Elastic Search, AWS, PostgreSQL"
     },
     {
+        title: "CATOS - Cargo Allocation and Tanker Optimization System",
+        duration: null, // { fromDate: "2020", toDate: "2021" },
+        description: `CATOS system is envisioned and
+        developed to allocate Cargo and Tanker optimization in the shipping sector industry. The objective of
+        the system is to develop independent cargo allocation and tanker optimization systems for ships on
+        voyages through different ports.`,
+        feSubHeading: "Frontend : ReactJS (Class and Functional Components), React-Redux, React-Hooks, HTML5, SCSS.",
+        beSubHeading: "Backend : Spring Boot, MySQL, Microsoft Login Services"
+    },
+    /* {
         title: "AWARE Web App",
         duration: null, // { fromDate: "2020", toDate: "2021" },
         description: `The AWARE system involves a suite of devices each having its own internet
@@ -122,17 +132,7 @@ export const projectDetails = [
         USA`,
         feSubHeading: "Frontend : Angular 4, HTML5, SCSS.",
         beSubHeading: "Backend : Django (Python), PostgreSQL."
-    },
-    {
-        title: "CATOS - Cargo Allocation and Tanker Optimization System",
-        duration: null, // { fromDate: "2020", toDate: "2021" },
-        description: `CATOS system is envisioned and
-        developed to allocate Cargo and Tanker optimization in the shipping sector industry. The objective of
-        the system is to develop independent cargo allocation and tanker optimization systems for ships on
-        voyages through different ports.`,
-        feSubHeading: "Frontend : ReactJS (Class and Functional Components), React-Redux, React-Hooks, HTML5, SCSS.",
-        beSubHeading: "Backend : Spring Boot, MySQL, Microsoft Login Services"
-    },
+    }, */
     {
         title: "SMARTShip",
         duration: null, // { fromDate: "2020", toDate: "2021" },
