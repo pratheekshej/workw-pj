@@ -108,7 +108,7 @@ export const projectDetails = [
         enable search, retrieval, sharing and repackaging of digital assets of biological systems and allow for
         collaboration between researchers with partial read or write access to various folders and files within
         a project.`,
-        feSubHeading: "Frontend : ReactJS, React Hooks, React Persist, React Redux, HTML5/SCSS",
+        feSubHeading: "Frontend : ReactJS, React Hooks, React Persist, React Redux, Redux Toolkit, HTML5/SCSS",
         beSubHeading: "Backend : Python, Elastic Search, AWS, PostgreSQL"
     },
     {
@@ -130,7 +130,7 @@ export const projectDetails = [
         developed to allocate Cargo and Tanker optimization in the shipping sector industry. The objective of
         the system is to develop independent cargo allocation and tanker optimization systems for ships on
         voyages through different ports.`,
-        feSubHeading: "Frontend : Angular 5, HTML5, SCSS.",
+        feSubHeading: "Frontend : ReactJS (Class and Functional Components), React-Redux, React-Hooks, HTML5, SCSS.",
         beSubHeading: "Backend : Spring Boot, MySQL, Microsoft Login Services"
     },
     {
