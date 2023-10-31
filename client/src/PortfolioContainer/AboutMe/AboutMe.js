@@ -74,7 +74,7 @@ const AboutMe = (props) => {
                                 onClick={() => ScrollService.scrollHandler.scrollToHireMe()}>
                                 Hire Me
                             </button>
-                            <a href="Pratheeksh - Senior Engineer.pdf" download={'Pratheeksh Joseph - CV.pdf'}>
+                            <a href="Pratheeksh Joseph - Senior Engineer.pdf" download={'Pratheeksh Joseph - Resume.pdf'}>
                                 <button className="btn highlighted-btn">Get Resume</button>
                             </a>
                         </div>

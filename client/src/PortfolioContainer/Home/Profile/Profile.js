@@ -33,7 +33,7 @@ const Profile = ({ renderTypical }) => {
                     </div>
                     <div className="profile-details-name">
                         <span className="primary-text">
-                            Hello, I'm <span className="highlighted-text">Pratheeksh J</span> and I am
+                            Hello, I'm <span className="highlighted-text">Pratheeksh Joseph</span> and I am
                         </span>
                     </div>
                     <div className="profile-details-role">
@@ -65,7 +65,7 @@ const Profile = ({ renderTypical }) => {
                         >
                             Hire Me
                         </button>
-                        <a href="Pratheeksh - Senior Engineer.pdf" download={'Pratheeksh Joseph - CV.pdf'}>
+                        <a href="Pratheeksh Joseph - Senior Engineer.pdf" download={'Pratheeksh Joseph - Resume.pdf'}>
                             <button className="btn highlighted-btn">Get Resume</button>
                         </a>
                     </div>
